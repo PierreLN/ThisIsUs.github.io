@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "homepage": "http://pierreln.github.io/ThisIsUs.github.io",
+  "homepage": "http://ThisIsUs.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
