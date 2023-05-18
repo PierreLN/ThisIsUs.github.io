@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./SideMenu.module.css";
+import styles from "./Header.module.css";
 import Button from "../UI/Button";
 
 function SideMenu(props: any) {
@@ -21,16 +21,16 @@ function SideMenu(props: any) {
     <div className={styles.side_menu}>
       <ul>
         <li>
-          <Button onClick={homePageHandler}>HOME</Button>
+          <Button onClick={homePageHandler}>OUT STORY</Button>
         </li>
         <li>
-          <Button onClick={ProjectPageHandler}>PROJECTS</Button>
+          <Button onClick={ProjectPageHandler}>WHEN AND WHERE</Button>
         </li>
         <li>
-          <Button onClick={aboutPageHandler}>ABOUT</Button>
+          <Button onClick={aboutPageHandler}>ACTIVITIES</Button>
         </li>
         <li>
-          <Button onClick={ContactPageHandler}>CONTACT</Button>
+          <Button onClick={ContactPageHandler} className={styles.reservation}>== RSVP ==</Button>
         </li>
         {/* <li>
           <Button>SERVICES</Button>
