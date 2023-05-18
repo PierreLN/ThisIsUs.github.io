@@ -6,7 +6,7 @@ const HomePage = (props: any) => {
       <div className={styles["homepage-top"]}>
       </div>
       <div className={styles["homepage-bottom"]}>
-        <div className={styles.title}>We're getting married!</div>
+        <div className={styles.title}>Celebrating Love and Forever!</div>
         <div className={styles.name}>She & He</div>
         <div className={styles.description}>
           <em>Please join us
