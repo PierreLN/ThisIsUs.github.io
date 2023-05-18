@@ -1,4 +1,10 @@
 .card {
-    border-radius: 10px;
-    background-color: transparent;
-  }
+  position: fixed;
+  top: 13%;
+  left: 5%;
+  width: 84%;
+  height: 70%;
+  border-radius: 10%;
+  box-shadow: 1px 4px 10px black;
+  padding: 3%;
+}

@@ -30,7 +30,7 @@
 }
 
 .signature {
-  width: 10%;
+  min-width: 150px;
   padding-left: 3%;
   font-family: 'Cormorant Garamond', serif;
   font-size: 50px;
