@@ -1,13 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import MainPage from './MainPage/MainPage';
 import Header from './Header/Header';
 
 function App() {
+  const [location, setLocation] = useState('home');
+
+  const onLocationHandler = (data: any) => {
+    setLocation(data)
+  }
+
   return (
     <div className="App">
-      <Header></Header>
-      <MainPage></MainPage>
+      <Header onMove={onLocationHandler}></Header>
+      <MainPage selectedPage={location}></MainPage>
     </div>
   );
 }

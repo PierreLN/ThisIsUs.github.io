@@ -3,39 +3,44 @@ import styles from "./Header.module.css";
 import Button from "../UI/Button";
 
 function SideMenu(props: any) {
-
   const homePageHandler = () => {
     props.onMove("home");
   };
-  const aboutPageHandler = () => {
-    props.onMove("about");
+  const ourStoryPageHandler = () => {
+    props.onMove("ourstory");
   };
-  const ProjectPageHandler = () => {
-    props.onMove("project");
+  const whenandwherePageHandler = () => {
+    props.onMove("whenAndWhere");
   };
-  const ContactPageHandler = () => {
-    props.onMove("contact");
+  const activitiesPageHandler = () => {
+    props.onMove("activities");
+  };
+  const rsvpPageHandler = () => {
+    props.onMove("rsvp");
   };
 
   return (
     <div className={styles.side_menu}>
+      <div className={styles.signature}>S & H</div>
       <ul>
         <li>
-          <Button onClick={homePageHandler}>OUT STORY</Button>
+          <Button onClick={homePageHandler}>HOME</Button>
         </li>
         <li>
-          <Button onClick={ProjectPageHandler}>WHEN AND WHERE</Button>
+          <Button onClick={ourStoryPageHandler}>OUT STORY</Button>
         </li>
         <li>
-          <Button onClick={aboutPageHandler}>ACTIVITIES</Button>
+          <Button onClick={whenandwherePageHandler}>WHEN AND WHERE</Button>
         </li>
         <li>
-          <Button onClick={ContactPageHandler} className={styles.reservation}>== RSVP ==</Button>
+          <Button onClick={activitiesPageHandler}>ACTIVITIES</Button>
+        </li>
+        <li>
+          <Button onClick={rsvpPageHandler} className={styles.reservation}>
+            == RSVP ==
+          </Button>
         </li>
         {/* <li>
-          <Button>SERVICES</Button>
-        </li>
-        <li>
           <Button>CLIENTS</Button>
         </li>
         <li>
