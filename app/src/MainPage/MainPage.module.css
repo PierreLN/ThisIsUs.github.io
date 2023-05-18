@@ -1,0 +1,9 @@
+.mainpage {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, rgba(111, 62, 2, 0.1), rgba(93, 68, 4, 0.5)) ,url('../Images/MainBackground_2.jpg');
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
