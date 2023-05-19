@@ -1,0 +1,73 @@
+.activities {
+    max-width: 1800px;
+    max-height: 1000px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.section-top {
+    width: 100%;
+    height: 0%;
+}
+.title {
+    text-align: center;
+    font-size: large;
+}
+
+.section-bottom {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-bottom-card {
+    max-width: 800px;
+    max-height: 500px;
+    width: 90%;
+    height: 90%;
+    background-color: rgb(186, 113, 3, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-schedule {
+    color: brown;
+    width: 95%;
+    height: 90%;
+    background-color: rgba(255, 238, 218, 0.836);
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.75);
+}
+
+.schedule {
+    width: 100%;
+    height: 30%;
+    padding-top: 3%;
+    color: brown;
+    font-size: 80px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    text-shadow: 2px 4px 4px black;
+    font-weight: 1000;
+}
+
+.card-days{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days {
+    width: 50%;
+    height: 100%;
+    color: brown;
+    font-size: 30px;
+}
