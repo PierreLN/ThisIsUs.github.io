@@ -1,5 +1,5 @@
 import styles from "./OurStoryPage.module.css";
-import Card from "../UI/Card";
+import Card from "../../UI/Card";
 
 const OurStoryPage = (props: any) => {
   return (

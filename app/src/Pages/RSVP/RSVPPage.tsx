@@ -1,5 +1,5 @@
 import styles from "./RSVPPage.module.css";
-import Card from "../UI/Card";
+import Card from "../../UI/Card";
 
 const RSVPPage = (props: any) => {
   return (

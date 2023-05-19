@@ -1,7 +1,7 @@
-import styles from "./Activities.module.css";
-import Card from "../UI/Card";
+import styles from "./ActivitiesPage.module.css";
+import Card from "../../UI/Card";
 
-const Activities = (props: any) => {
+const ActivitiesPage = (props: any) => {
   return (
     <Card className={styles.activities}>
       <div className={styles["section-top"]}></div>
@@ -42,4 +42,4 @@ const Activities = (props: any) => {
   );
 };
 
-export default Activities;
+export default ActivitiesPage;

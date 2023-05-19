@@ -1,7 +1,7 @@
 import styles from "./MainPage.module.css";
 import React, { useState, useEffect, useRef } from "react";
 import WhenAndWherePage from "../WhenAndWhere/WhenAndWherePage";
-import Activities from "../Activities/Activities";
+import ActivitiesPage from "../ActivitiesPage/ActivitiesPage";
 import RSVPPage from "../RSVP/RSVPPage";
 import HomePage from "../HomePage/HomePage";
 import OurStoryPage from "../OurStoryPage/OurStoryPage";
@@ -11,7 +11,7 @@ function MainPage(props: any) {
 
   const homePage = <HomePage onClick={props.onClick}></HomePage>;
   const whenAndWherePage = <WhenAndWherePage></WhenAndWherePage>;
-  const activitiesPage = <Activities></Activities>;
+  const activitiesPage = <ActivitiesPage></ActivitiesPage>;
   const rsvpPage = <RSVPPage></RSVPPage>;
   const outStoryPage = <OurStoryPage></OurStoryPage>;
 
