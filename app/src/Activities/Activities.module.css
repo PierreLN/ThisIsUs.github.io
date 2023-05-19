@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: slideUp 1.5s ease-in-out;
 }
 
 .card-schedule {
@@ -43,6 +44,7 @@
     align-items: center;
     text-align: center;
     box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.75);
+    animation: slideUp 2s ease-in-out;
 }
 
 .schedule {
@@ -71,3 +73,23 @@
     color: brown;
     font-size: 30px;
 }
+
+@keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(10rem) translateX(-5rem);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0rem) translateX(0rem);
+    }
+  }
+
+  @keyframes darker {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

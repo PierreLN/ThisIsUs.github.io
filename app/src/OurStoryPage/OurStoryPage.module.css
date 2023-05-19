@@ -2,6 +2,8 @@
   text-align: center;
 }
 
+
+
 .top-section {
   height: 20%;
 }
@@ -16,17 +18,19 @@
 .bottom-1-section {
   box-shadow: 1px 4px 10px black;
   width: 30%;
+  animation: slideToRight 2.5s ease-in-out;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.2),
     rgba(0, 17, 2, 0.6)
-
   )
 }
 
 .bottom-2-section {
   box-shadow: 1px 4px 10px black;
   width: 30%;
+  animation: slideToRight 2s ease-in-out;
+
   background-image: linear-gradient(
     to top,
     rgba(0, 0, 0, 0.2),
@@ -37,6 +41,8 @@
 .bottom-3-section {
   box-shadow: 1px 4px 10px black;
   width: 30%;
+  animation: slideToRight 1.5s ease-in-out;
+
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.2),
@@ -46,4 +52,15 @@
 
 .larger {
     font-size: x-large;
+}
+
+@keyframes slideToRight {
+  from {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
 }

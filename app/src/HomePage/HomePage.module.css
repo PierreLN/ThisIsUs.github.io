@@ -2,6 +2,16 @@
   width: 100%;
   height: 100%;
   text-align: center;
+  animation: pageAppear 0.5s ease-in-out;
+}
+
+@keyframes pageAppear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .homepage-top {
