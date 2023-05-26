@@ -18,3 +18,17 @@
     opacity: 1;
   }
 }
+
+@media only screen and (max-width: 720px) {
+
+  .card {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  .card {
+    font-size: 12px;
+  }
+}

@@ -37,7 +37,7 @@ function SideMenu(props: any) {
         </li>
         <li>
           <Button onClick={rsvpPageHandler} className={styles.reservation}>
-            == RSVP ==
+              RSVP  
           </Button>
         </li>
         {/* <li>

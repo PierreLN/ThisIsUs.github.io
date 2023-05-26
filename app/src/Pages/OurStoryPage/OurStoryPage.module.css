@@ -64,3 +64,24 @@
     transform: translateX(0rem);
   }
 }
+
+@media only screen and (max-width: 720px) {
+  .top-section {
+    font-size: 12px;
+  }
+
+  .larger {
+    font-size: 14px;
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  .top-section {
+    font-size: 9px;
+  }
+
+  .larger {
+    font-size: 9px;
+  }
+}

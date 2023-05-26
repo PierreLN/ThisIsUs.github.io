@@ -1,9 +1,9 @@
 .activities {
-    max-width: 1800px;
+    /* max-width: 1800px;
     max-height: 1000px;
     display: inline-block;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 .section-top {
     width: 100%;
@@ -11,7 +11,6 @@
 }
 .title {
     text-align: center;
-    font-size: large;
 }
 
 .section-bottom {
@@ -52,7 +51,7 @@
     height: 30%;
     padding-top: 3%;
     color: brown;
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
     text-shadow: 2px 4px 4px black;
@@ -68,10 +67,10 @@
 }
 
 .days {
-    width: 50%;
+    width: 57%;
     height: 100%;
     color: brown;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 @keyframes slideUp {
@@ -91,5 +90,25 @@
     }
     to {
       opacity: 1;
+    }
+  }
+
+  @media only screen and (max-width: 720px) {
+
+    .activities {
+      font-size: 12px;
+    }
+    .schedule {
+      font-size: 42px;
+    }
+    .days {
+      font-size: 16px;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 420px) {
+    .activities {
+      font-size: 10px;
     }
   }

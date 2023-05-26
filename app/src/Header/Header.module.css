@@ -45,10 +45,25 @@
   border: none;
 }
 
-@media only screen and (max-width: 420px) {
+
+@media only screen and (max-width: 720px) {
   .side_menu li {
     margin-left: 2%;
     margin-right: 2%;
     font-size: small;
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+  .side_menu li {
+    margin-left: 2%;
+    margin-right: 2%;
+    font-size: 9px;
+    padding: 3%;
+  }
+
+  .signature {
+    font-size: 22px;
   }
 }
