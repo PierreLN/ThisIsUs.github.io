@@ -1,8 +1,23 @@
 import styles from "./RSVPPage.module.css";
 import Card from "../../UI/Card";
 import RSVPForm from "./RSVPForm";
+import { useState } from "react";
 
 const RSVPPage = (props: any) => {
+  const [infoSend, setInfoSend] = useState(false);
+  const [message, setMessage] = useState("");
+
+  const isCommingHandler = (guess: any) => {
+    if (guess.attending) {
+      setMessage(`Welcome on Board ${guess.firstname} ${guess.lastname}!`);
+    } else {
+      setMessage(
+        `Will see you next time ${guess.firstname} ${guess.lastname}!`
+      );
+    }
+    setInfoSend(true);
+  };
+
   return (
     <Card className={styles.rsvppage}>
       <div className={styles["section-top"]}>
@@ -25,7 +40,8 @@ const RSVPPage = (props: any) => {
             We're so excited to see you at our big day! Let us know if you can
             make it by March 31st (or else I will hound you)
           </div>
-          <RSVPForm></RSVPForm>
+          {!infoSend && <RSVPForm isCommig={isCommingHandler}></RSVPForm>}
+          {infoSend && <div className={styles.message}>{message}</div>}
         </div>
       </div>
     </Card>
