@@ -29,7 +29,9 @@ const RSVPForm = (props: any) => {
     console.log(data);
   };
 
-  const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const onChangeHandler = (
+    event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value, type, checked } = event.target as HTMLInputElement;
     const newValue = type === "checkbox" ? checked : value;
 
@@ -39,49 +41,67 @@ const RSVPForm = (props: any) => {
     }));
   };
 
-
-
   return (
+    <div className={styles['rsvp-form']}>
+
     <form className={styles.form} onSubmit={onSubmitHanlder}>
       <div className={styles.name}>
-        <input
+        <div className={styles['firstname-section']}>
+          <div>First Name*</div>
+          <input
           className={styles.firstname}
-          type="text"
-          name="firstname"
-          id="firstname"
-          placeholder="First Name (required)"
-          onChange={onChangeHandler}
-          required
-        />
-        <input
+            type="text"
+            name="firstname"
+            id="firstname"
+            placeholder="(required)"
+            onChange={onChangeHandler}
+            required
+          />
+        </div>
+        <div className={styles['lastname-section']}>
+          <div>Last Name*</div>
+          <input
           className={styles.lastname}
-          type="text"
-          name="lastname"
-          id="lastname"
-          placeholder="Last Name (required)"
-          onChange={onChangeHandler}
-          required
-        />
+            type="text"
+            name="lastname"
+            id="lastname"
+            placeholder="(required)"
+            onChange={onChangeHandler}
+            required
+          />
+        </div>
       </div>
       <br />
+      <div>Email*</div>
       <input
         className={styles.email}
         type="email"
         name="email"
         id="email"
-        placeholder="Email (required)"
+        placeholder="(required)"
         onChange={onChangeHandler}
         required
       />
       <br />
       <br />
-      <div>Will you be attending? (required)</div>
+      <div>Will you be attending? (required)*</div>
       <div className={styles.attendence}>
-        <input onChange={onChangeHandler} type="checkbox" name="attending" id="attending" defaultChecked />
+        <input
+          onChange={onChangeHandler}
+          type="checkbox"
+          name="attending"
+          id="attending"
+          defaultChecked
+        />
         <div>Yes</div>
       </div>
       <div className={styles.attendence}>
-        <input onChange={onChangeHandler} type="checkbox" name="notAttending" id="notAttending" />
+        <input
+          onChange={onChangeHandler}
+          type="checkbox"
+          name="notAttending"
+          id="notAttending"
+        />
         <div>No</div>
       </div>
       <br />
@@ -99,11 +119,17 @@ const RSVPForm = (props: any) => {
       <br />
       <br />
       <div>Anything else you want to share?</div>
-      <textarea onChange={onChangeHandler} className={styles.note} name="note" id="note"></textarea>
+      <textarea
+        onChange={onChangeHandler}
+        className={styles.note}
+        name="note"
+        id="note"
+      ></textarea>
       <br />
       <br />
-      <button type="submit">Submit</button>
+      <button className={styles.button} type="submit">Submit</button>
     </form>
+    </div>
   );
 };
 
