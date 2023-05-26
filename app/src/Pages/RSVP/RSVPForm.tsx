@@ -82,25 +82,15 @@ const RSVPForm = (props: any) => {
         />
         <br />
         <br />
-        <div>Will you be attending? (required)*</div>
+        <div>Will you be attending?</div>
         <div className={styles.attendence}>
           <input
             onChange={onChangeHandler}
             type="checkbox"
             name="attending"
             id="attending"
-            defaultChecked
           />
-          <div>Yes</div>
-        </div>
-        <div className={styles.attendence}>
-          <input
-            onChange={onChangeHandler}
-            type="checkbox"
-            name="notAttending"
-            id="notAttending"
-          />
-          <div>No</div>
+          <div>Confirm</div>
         </div>
         <br />
         <div>
