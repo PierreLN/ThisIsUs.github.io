@@ -1,15 +1,29 @@
 import styles from "./RSVPForm.module.css";
 import { useState } from "react";
+import { DateTimeFormatOptions } from "intl";
 
 const RSVPForm = (props: any) => {
+
+  const now = new Date();
+  const options = {
+    timeZone: "America/Montreal",
+    year: "numeric",
+    month: "numeric",
+    day: "numeric",
+    hour: "numeric",
+    minute: "numeric",
+    second: "numeric",
+  };
+  const montrealTime = now.toLocaleString("en-US", options as DateTimeFormatOptions);
+
   const [reservation, setReservation] = useState({
     firstname: "",
     lastname: "",
     email: "",
-    attending: true,
-    notAttending: false,
+    attending: false,
     guess: "",
     note: "",
+    time: montrealTime,
   });
 
   const onSubmitHanlder = async (event: React.FormEvent<HTMLFormElement>) => {
