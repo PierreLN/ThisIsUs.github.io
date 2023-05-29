@@ -30,7 +30,7 @@ const RSVPForm = (props: any) => {
     event.preventDefault();
 
     const response = await fetch(
-      "https://react-http-6ae90-default-rtdb.firebaseio.com/rsvp.json",
+      "https://react-http-6ae90-default-rtdb.firebaseio.com/ThisIsUs/reservation_info.json",
       {
         method: "POST",
         body: JSON.stringify(reservation),
