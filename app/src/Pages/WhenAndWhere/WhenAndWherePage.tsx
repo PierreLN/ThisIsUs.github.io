@@ -4,7 +4,7 @@ import Map from "../../UI/Map";
 
 const WhenAndWherePage = (props: any) => {
   return (
-    <Card>
+    <Card className={styles.whenandwhere}>
       <div className={styles["section-top"]}>
         <div className={styles["section-top-title"]}>
           Save the date and mark your calendars! We are thrilled to invite you
@@ -16,23 +16,18 @@ const WhenAndWherePage = (props: any) => {
         </div>
       </div>
       <div className={styles["section-bottom"]}>
-        <div className={styles["section-bottom-first"]}>
-        </div>
+        <div className={styles["section-bottom-first"]}></div>
         <div className={styles["section-bottom-second"]}>
           <div className={styles["section-bottom-second-box"]}>
             <div className={styles["section-bottom-second-image"]}>
-              <Map className={styles['section-bottom-second-map']}></Map>
+              <Map className={styles["section-bottom-second-map"]}></Map>
             </div>
             <div className={styles["section-bottom-second-description"]}>
-              Basilique Notre-Dame de Montréal
-              <br /><br />
-              110 R. Notre Dame O, Montréal, QC H2Y 1T1
+              <div className={styles['section-bottom-second-description-shadow']}></div>
             </div>
           </div>
         </div>
-        <div className={styles["section-bottom-third"]}>
-
-        </div>
+        <div className={styles["section-bottom-third"]}></div>
       </div>
     </Card>
   );

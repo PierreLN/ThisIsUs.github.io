@@ -31,19 +31,26 @@
     justify-content: center;
     align-items: center;
     animation: slideUp 1.5s ease-in-out;
+    background-image: url('../../../Images/card_1.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 5%;
 }
 
 .card-schedule {
     color: brown;
     width: 95%;
     height: 90%;
-    background-color: rgba(255, 238, 218, 0.836);
+    background-color: rgba(255, 238, 218, 0.136);
     display: inline;
     justify-content: center;
     align-items: center;
     text-align: center;
     box-shadow: 1px 4px 14px rgba(0, 0, 0, 0.75);
     animation: slideUp 2s ease-in-out;
+    border-radius: 5%;
+
 }
 
 .schedule {

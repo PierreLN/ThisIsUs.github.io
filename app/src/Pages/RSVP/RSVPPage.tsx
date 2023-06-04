@@ -40,7 +40,7 @@ const RSVPPage = (props: any) => {
             We're so excited to see you at our big day! Let us know if you can
             make it by March 31st (or else I will hound you)
           </div>
-          {!infoSend && <RSVPForm isCommig={isCommingHandler}></RSVPForm>}
+          {!infoSend && <RSVPForm className={styles.form} isCommig={isCommingHandler}></RSVPForm>}
           {infoSend && <div className={styles.message}>{message}</div>}
         </div>
       </div>

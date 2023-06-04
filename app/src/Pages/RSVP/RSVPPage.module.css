@@ -1,12 +1,11 @@
 .rsvppage {
   display: inline-block;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .section-top {
   width: 100%;
   height: 15%;
-  /* background-color: blueviolet; */
 }
 
 .section-top-text {
@@ -28,8 +27,7 @@
 
 .description {
   width: 90%;
-  height: 10%;
-
+  height: 0%;
   text-align: center;
   padding-bottom: 2%;
 }
@@ -47,7 +45,6 @@
   .rsvppage {
     font-size: 8px;
   }
-
 }
 
 @media only screen and (max-width: 420px) {
