@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/ThisIsUs.github.io/static/css/main.664eb035.css",
+    "main.css": "/ThisIsUs.github.io/static/css/main.3c27000f.css",
     "main.js": "/ThisIsUs.github.io/static/js/main.f7d3e718.js",
     "static/media/rsvp_0.jpg": "/ThisIsUs.github.io/static/media/rsvp_0.dd26c1a31be00fe68511.jpg",
     "static/media/card_1.jpg": "/ThisIsUs.github.io/static/media/card_1.977befa3a3c04bc58321.jpg",
     "static/media/MainBackground_2.jpg": "/ThisIsUs.github.io/static/media/MainBackground_2.1d5156723e1b7210c6c9.jpg",
-    "static/media/where_1.jpg": "/ThisIsUs.github.io/static/media/where_1.c248ef351558b5f12d0a.jpg",
     "static/media/Basílica_de_Notre_Dame_Montreal.jpg": "/ThisIsUs.github.io/static/media/Basílica_de_Notre_Dame_Montreal.d9d09635a6bfc99c3e9c.jpg",
     "index.html": "/ThisIsUs.github.io/index.html",
-    "main.664eb035.css.map": "/ThisIsUs.github.io/static/css/main.664eb035.css.map",
+    "main.3c27000f.css.map": "/ThisIsUs.github.io/static/css/main.3c27000f.css.map",
     "main.f7d3e718.js.map": "/ThisIsUs.github.io/static/js/main.f7d3e718.js.map"
   },
   "entrypoints": [
-    "static/css/main.664eb035.css",
+    "static/css/main.3c27000f.css",
     "static/js/main.f7d3e718.js"
   ]
 }
