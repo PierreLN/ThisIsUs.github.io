@@ -1,17 +1,33 @@
 {
   "files": {
-    "main.css": "/ThisIsUs.github.io/static/css/main.3c27000f.css",
-    "main.js": "/ThisIsUs.github.io/static/js/main.f7d3e718.js",
+    "main.css": "/ThisIsUs.github.io/static/css/main.f085bbbc.css",
+    "main.js": "/ThisIsUs.github.io/static/js/main.a5080569.js",
+    "static/css/731.b63165a9.chunk.css": "/ThisIsUs.github.io/static/css/731.b63165a9.chunk.css",
+    "static/js/731.4f6bd445.chunk.js": "/ThisIsUs.github.io/static/js/731.4f6bd445.chunk.js",
+    "static/css/873.0b0aa521.chunk.css": "/ThisIsUs.github.io/static/css/873.0b0aa521.chunk.css",
+    "static/js/873.48727ded.chunk.js": "/ThisIsUs.github.io/static/js/873.48727ded.chunk.js",
+    "static/css/12.7a0c7afa.chunk.css": "/ThisIsUs.github.io/static/css/12.7a0c7afa.chunk.css",
+    "static/js/12.45beb4e1.chunk.js": "/ThisIsUs.github.io/static/js/12.45beb4e1.chunk.js",
+    "static/css/316.30a264ea.chunk.css": "/ThisIsUs.github.io/static/css/316.30a264ea.chunk.css",
+    "static/js/316.5683fa35.chunk.js": "/ThisIsUs.github.io/static/js/316.5683fa35.chunk.js",
     "static/media/rsvp_0.jpg": "/ThisIsUs.github.io/static/media/rsvp_0.dd26c1a31be00fe68511.jpg",
     "static/media/card_1.jpg": "/ThisIsUs.github.io/static/media/card_1.977befa3a3c04bc58321.jpg",
     "static/media/MainBackground_2.jpg": "/ThisIsUs.github.io/static/media/MainBackground_2.1d5156723e1b7210c6c9.jpg",
     "static/media/Basílica_de_Notre_Dame_Montreal.jpg": "/ThisIsUs.github.io/static/media/Basílica_de_Notre_Dame_Montreal.d9d09635a6bfc99c3e9c.jpg",
     "index.html": "/ThisIsUs.github.io/index.html",
-    "main.3c27000f.css.map": "/ThisIsUs.github.io/static/css/main.3c27000f.css.map",
-    "main.f7d3e718.js.map": "/ThisIsUs.github.io/static/js/main.f7d3e718.js.map"
+    "main.f085bbbc.css.map": "/ThisIsUs.github.io/static/css/main.f085bbbc.css.map",
+    "main.a5080569.js.map": "/ThisIsUs.github.io/static/js/main.a5080569.js.map",
+    "731.b63165a9.chunk.css.map": "/ThisIsUs.github.io/static/css/731.b63165a9.chunk.css.map",
+    "731.4f6bd445.chunk.js.map": "/ThisIsUs.github.io/static/js/731.4f6bd445.chunk.js.map",
+    "873.0b0aa521.chunk.css.map": "/ThisIsUs.github.io/static/css/873.0b0aa521.chunk.css.map",
+    "873.48727ded.chunk.js.map": "/ThisIsUs.github.io/static/js/873.48727ded.chunk.js.map",
+    "12.7a0c7afa.chunk.css.map": "/ThisIsUs.github.io/static/css/12.7a0c7afa.chunk.css.map",
+    "12.45beb4e1.chunk.js.map": "/ThisIsUs.github.io/static/js/12.45beb4e1.chunk.js.map",
+    "316.30a264ea.chunk.css.map": "/ThisIsUs.github.io/static/css/316.30a264ea.chunk.css.map",
+    "316.5683fa35.chunk.js.map": "/ThisIsUs.github.io/static/js/316.5683fa35.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c27000f.css",
-    "static/js/main.f7d3e718.js"
+    "static/css/main.f085bbbc.css",
+    "static/js/main.a5080569.js"
   ]
 }
