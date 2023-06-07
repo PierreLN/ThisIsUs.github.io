@@ -1,19 +1,25 @@
 import styles from "./MainPage.module.css";
-import React, { useState, useEffect, useRef } from "react";
-import WhenAndWherePage from "../WhenAndWhere/WhenAndWherePage";
-import ActivitiesPage from "../ActivitiesPage/ActivitiesPage";
-import RSVPPage from "../RSVP/RSVPPage";
+import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
 import HomePage from "../HomePage/HomePage";
-import OurStoryPage from "../OurStoryPage/OurStoryPage";
+// import OurStoryPage from "../OurStoryPage/OurStoryPage";
+// import WhenAndWherePage from "../WhenAndWhere/WhenAndWherePage";
+// import ActivitiesPage from "../ActivitiesPage/ActivitiesPage";
+// import RSVPPage from "../RSVP/RSVPPage";
+
+const OurStoryPage = lazy(() => import('../OurStoryPage/OurStoryPage'))
+const WhenAndWherePage = lazy(() => import('../WhenAndWhere/WhenAndWherePage'))
+const ActivitiesPage = lazy(() => import('../ActivitiesPage/ActivitiesPage'))
+const RSVPPage = lazy(() => import('../RSVP/RSVPPage'))
 
 function MainPage(props: any) {
   const mainPageRef = useRef(null);
 
   const homePage = <HomePage onClick={props.onClick}></HomePage>;
-  const whenAndWherePage = <WhenAndWherePage></WhenAndWherePage>;
-  const activitiesPage = <ActivitiesPage></ActivitiesPage>;
-  const rsvpPage = <RSVPPage></RSVPPage>;
-  const outStoryPage = <OurStoryPage></OurStoryPage>;
+  const outStoryPage = <Suspense fallback='Loading...'><OurStoryPage></OurStoryPage></Suspense>;
+  const whenAndWherePage = <Suspense fallback='Loading...'><WhenAndWherePage></WhenAndWherePage></Suspense>;
+
+  const activitiesPage = <Suspense fallback='Loading...'><ActivitiesPage></ActivitiesPage></Suspense>;
+  const rsvpPage = <Suspense fallback='Loading...'><RSVPPage></RSVPPage></Suspense>;
 
   const [currentPage, setCurrentPage] = useState(homePage);
   const [background, setBackground] = useState("backgroundPicture0");
