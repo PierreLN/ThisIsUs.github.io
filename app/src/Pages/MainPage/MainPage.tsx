@@ -6,20 +6,36 @@ import HomePage from "../HomePage/HomePage";
 // import ActivitiesPage from "../ActivitiesPage/ActivitiesPage";
 // import RSVPPage from "../RSVP/RSVPPage";
 
-const OurStoryPage = lazy(() => import('../OurStoryPage/OurStoryPage'))
-const WhenAndWherePage = lazy(() => import('../WhenAndWhere/WhenAndWherePage'))
-const ActivitiesPage = lazy(() => import('../ActivitiesPage/ActivitiesPage'))
-const RSVPPage = lazy(() => import('../RSVP/RSVPPage'))
+const OurStoryPage = lazy(() => import("../OurStoryPage/OurStoryPage"));
+const WhenAndWherePage = lazy(() => import("../WhenAndWhere/WhenAndWherePage"));
+const ActivitiesPage = lazy(() => import("../ActivitiesPage/ActivitiesPage"));
+const RSVPPage = lazy(() => import("../RSVP/RSVPPage"));
 
 function MainPage(props: any) {
   const mainPageRef = useRef(null);
 
   const homePage = <HomePage onClick={props.onClick}></HomePage>;
-  const outStoryPage = <Suspense fallback='Loading...'><OurStoryPage></OurStoryPage></Suspense>;
-  const whenAndWherePage = <Suspense fallback='Loading...'><WhenAndWherePage></WhenAndWherePage></Suspense>;
+  const outStoryPage = (
+    <Suspense fallback="Loading...">
+      <OurStoryPage></OurStoryPage>
+    </Suspense>
+  );
+  const whenAndWherePage = (
+    <Suspense fallback="Loading...">
+      <WhenAndWherePage></WhenAndWherePage>
+    </Suspense>
+  );
 
-  const activitiesPage = <Suspense fallback='Loading...'><ActivitiesPage></ActivitiesPage></Suspense>;
-  const rsvpPage = <Suspense fallback='Loading...'><RSVPPage></RSVPPage></Suspense>;
+  const activitiesPage = (
+    <Suspense fallback="Loading...">
+      <ActivitiesPage></ActivitiesPage>
+    </Suspense>
+  );
+  const rsvpPage = (
+    <Suspense fallback="Loading...">
+      <RSVPPage></RSVPPage>
+    </Suspense>
+  );
 
   const [currentPage, setCurrentPage] = useState(homePage);
   const [background, setBackground] = useState("backgroundPicture0");
