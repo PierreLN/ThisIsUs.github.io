@@ -1,5 +1,5 @@
 import styles from "./MainPage.module.css";
-import React, { useState, useEffect, useRef, lazy, Suspense } from "react";
+import { useState, useEffect, useRef, lazy, Suspense } from "react";
 import HomePage from "../HomePage/HomePage";
 // import OurStoryPage from "../OurStoryPage/OurStoryPage";
 // import WhenAndWherePage from "../WhenAndWhere/WhenAndWherePage";
@@ -11,10 +11,14 @@ const WhenAndWherePage = lazy(() => import("../WhenAndWhere/WhenAndWherePage"));
 const ActivitiesPage = lazy(() => import("../ActivitiesPage/ActivitiesPage"));
 const RSVPPage = lazy(() => import("../RSVP/RSVPPage"));
 
-function MainPage(props: any) {
+interface MainPageProps {
+  selectedPage: string
+}
+
+function MainPage({selectedPage} : MainPageProps) {
   const mainPageRef = useRef(null);
 
-  const homePage = <HomePage onClick={props.onClick}></HomePage>;
+  const homePage = <HomePage></HomePage>;
   const outStoryPage = (
     <Suspense fallback="Loading...">
       <OurStoryPage></OurStoryPage>
@@ -41,18 +45,18 @@ function MainPage(props: any) {
   const [background, setBackground] = useState("backgroundPicture0");
 
   useEffect(() => {
-    if (props.selectedPage === "whenAndWhere") {
+    if (selectedPage === "whenAndWhere") {
       setCurrentPage(whenAndWherePage);
-    } else if (props.selectedPage === "home") {
+    } else if (selectedPage === "home") {
       setCurrentPage(homePage);
-    } else if (props.selectedPage === "activities") {
+    } else if (selectedPage === "activities") {
       setCurrentPage(activitiesPage);
-    } else if (props.selectedPage === "rsvp") {
+    } else if (selectedPage === "rsvp") {
       setCurrentPage(rsvpPage);
-    } else if (props.selectedPage === "ourstory") {
+    } else if (selectedPage === "ourstory") {
       setCurrentPage(outStoryPage);
     }
-  }, [props.selectedPage]);
+  }, [selectedPage]);
 
   // For picture rotation - not activated
   useEffect(() => {

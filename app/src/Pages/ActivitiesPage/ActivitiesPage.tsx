@@ -1,7 +1,7 @@
 import styles from "./ActivitiesPage.module.css";
 import Card from "../../UI/Card";
 
-const ActivitiesPage = (props: any) => {
+const ActivitiesPage = () => {
   return (
     <Card className={styles.activities}>
       <div className={styles["section-top"]}></div>

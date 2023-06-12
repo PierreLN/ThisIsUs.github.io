@@ -1,6 +1,6 @@
 import styles from "./HomePage.module.css";
 
-const HomePage = (props: any) => {
+const HomePage = () => {
   return (
     <div className={styles.homepage}>
       <div className={styles["homepage-top"]}>

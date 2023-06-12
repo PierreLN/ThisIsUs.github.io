@@ -2,7 +2,7 @@ import styles from "./WhenAndWherePage.module.css";
 import Card from "../../UI/Card";
 import Map from "../../UI/Map";
 
-const WhenAndWherePage = (props: any) => {
+const WhenAndWherePage = () => {
   return (
     <Card className={styles.whenandwhere}>
       <div className={styles["section-top"]}>

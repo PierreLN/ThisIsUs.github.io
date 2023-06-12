@@ -1,7 +1,7 @@
 import styles from "./OurStoryPage.module.css";
 import Card from "../../UI/Card";
 
-const OurStoryPage = (props: any) => {
+const OurStoryPage = () => {
   return (
     <Card className={styles.ourstorypage}>
       <div className={styles["top-section"]}>
