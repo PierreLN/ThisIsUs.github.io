@@ -61,21 +61,19 @@
 .image-02:hover,
 .image-10:hover,
 .image-11:hover {
-  animation: scaling 2s ease-in-out forwards;
+  animation: scaling 1s ease-in-out forwards;
 }
 .image-20:hover {
-  animation: scaling 2s ease-in-out forwards;
-
   animation: shaking 2s ease-in-out forwards;
 }
 
 
 @keyframes scaling {
   0% {
-    background-size: 100% 100%;
+    background-size: 100% 180%;
   }
   100% {
-    background-size: 120% 120%;
+    background-size: 140% 260%;
     box-shadow: 1px 3px 15px whitesmoke;
   }
 }
@@ -83,7 +81,7 @@
 @keyframes shaking {
   0% {
     transform: translateX(0rem);
-    background-size: 100% 100%;
+    background-size: 100% 180%;
   }
   5% {
     transform: translateX(0.2rem);
@@ -104,12 +102,15 @@
   }
   60% {
     transform: translateX(0rem);
-    background-size: 120% 120%;    
+    background-size: 140% 260%;
+    box-shadow: 1px 3px 15px whitesmoke;
+    background-position: 50% 45%;
   }
   100% {
     transform: translateX(0rem);
-    box-shadow: 1px 3px 15px rgb(255, 255, 255);
-    background-size: 120% 120%;    
+    background-size: 140% 260%;
+    box-shadow: 1px 3px 15px whitesmoke;
+    background-position: 50% 40%;
 
   }
 }
@@ -159,7 +160,7 @@
 
 .image-00 {
   background-image: url("../../../Images/photo_00.jpg");
-  background-position: 50% 0%;
+  background-position: 50% 20%;
 }
 
 .image-01 {
