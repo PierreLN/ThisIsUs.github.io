@@ -74,7 +74,7 @@
   }
   100% {
     background-size: 140% 260%;
-    box-shadow: 1px 3px 15px whitesmoke;
+    box-shadow: 1px 3px 35px whitesmoke;
   }
 }
 
@@ -103,13 +103,13 @@
   60% {
     transform: translateX(0rem);
     background-size: 140% 260%;
-    box-shadow: 1px 3px 15px whitesmoke;
+    box-shadow: 1px 10px 15px whitesmoke;
     background-position: 50% 45%;
   }
   100% {
     transform: translateX(0rem);
     background-size: 140% 260%;
-    box-shadow: 1px 3px 15px whitesmoke;
+    box-shadow: 1px 10px 45px rgb(255, 95, 242);
     background-position: 50% 40%;
 
   }
