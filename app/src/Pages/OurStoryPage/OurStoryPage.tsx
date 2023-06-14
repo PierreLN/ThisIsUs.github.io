@@ -12,18 +12,26 @@ const OurStoryPage = () => {
         day.
       </div>
       <div className={styles["bottom-section"]}>
-        <div className={styles["bottom-1-section"]}>
+        <div className={styles["bottom-0-section"]}>
           <div className={styles.larger}>How we met</div>
-          <div></div>
+          <div className={styles["image-section"]}>
+            <div className={`${styles["image-00"]} ${styles.image}`}></div>
+            <div className={`${styles["image-01"]} ${styles.image}`}></div>
+            <div className={`${styles["image-02"]} ${styles.image}`}></div>
+          </div>
+        </div>
+        <div className={styles["bottom-1-section"]}>
+          <div className={styles.larger}>The adventures </div>
+          <div className={styles["image-section"]}>
+            <div className={`${styles["image-10"]} ${styles.image}`}></div>
+            <div className={`${styles["image-11"]} ${styles.image}`}></div>
+
+          </div>
         </div>
         <div className={styles["bottom-2-section"]}>
-          <div className={styles.larger}>The adventures </div>
-          <div></div>
-        </div>
-        <div className={styles["bottom-3-section"]}>
-          <div className={styles.larger}>The moments that led us to this special day</div>
-          <div>
-
+          <div className={styles.larger}>That special day</div>
+          <div className={styles["image-section"]}>
+            <div className={`${styles["image-20"]} ${styles.image}`}></div>
           </div>
         </div>
       </div>
