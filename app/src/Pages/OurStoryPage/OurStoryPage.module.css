@@ -60,40 +60,111 @@
 .image-01:hover,
 .image-02:hover,
 .image-10:hover,
-.image-11:hover,
-.image-20:hover {
-  animation: scaling 1s ease-in-out forwards;
+.image-11:hover {
+  animation: scaling 2s ease-in-out forwards;
 }
+.image-20:hover {
+  animation: scaling 2s ease-in-out forwards;
+
+  animation: shaking 2s ease-in-out forwards;
+}
+
 
 @keyframes scaling {
   0% {
-    transform: scale(1);
+    background-size: 100% 100%;
   }
   100% {
-    transform: scale(1.1);
-    box-shadow: 1px 3px 15px black;
+    background-size: 120% 120%;
+    box-shadow: 1px 3px 15px whitesmoke;
+  }
+}
+
+@keyframes shaking {
+  0% {
+    transform: translateX(0rem);
+    background-size: 100% 100%;
+  }
+  5% {
+    transform: translateX(0.2rem);
+  }
+  10% {
+    transform: translateX(-0.2rem);
+    transform: translateY(-0.2rem);
+  }
+  15% {
+    transform: translateX(0.2rem);
+  }
+  20% {
+    transform: translateX(-0.2rem);
+    transform: translateY(0.2rem);
+  }
+  25% {
+    transform: translateX(0.2rem);
+  }
+  60% {
+    transform: translateX(0rem);
+    background-size: 120% 120%;    
+  }
+  100% {
+    transform: translateX(0rem);
+    box-shadow: 1px 3px 15px rgb(255, 255, 255);
+    background-size: 120% 120%;    
+
   }
 }
 
 .image {
+  position: relative;
   width: 100%;
   height: 30%;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  border: 1px solid black;
+}
+
+.image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.4); 
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.image:hover:before {
+  opacity: 1;
+}
+
+.image:hover::before,
+.image:hover::after {
+  pointer-events: none;
+}
+
+.image:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(61, 37, 1);
+  font-weight: bold;
+  font-size: 25px;
+  text-align: center;
+  z-index: 1;
 }
 
 .image-00 {
   background-image: url("../../../Images/photo_00.jpg");
   background-position: 50% 0%;
-
 }
 
 .image-01 {
   background-image: url("../../../Images/photo_01.jpg");
   background-position: 50% 10%;
-
 }
 
 .image-02 {
