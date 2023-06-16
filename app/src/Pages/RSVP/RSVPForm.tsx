@@ -3,7 +3,6 @@ import { useState } from "react";
 import { DateTimeFormatOptions } from "intl";
 
 const RSVPForm = (props: any) => {
-
   const now = new Date();
   const options = {
     timeZone: "America/Montreal",
@@ -14,7 +13,10 @@ const RSVPForm = (props: any) => {
     minute: "numeric",
     second: "numeric",
   };
-  const montrealTime = now.toLocaleString("en-US", options as DateTimeFormatOptions);
+  const montrealTime = now.toLocaleString(
+    "en-US",
+    options as DateTimeFormatOptions
+  );
 
   const [reservation, setReservation] = useState({
     firstname: "",
@@ -29,7 +31,7 @@ const RSVPForm = (props: any) => {
   const onSubmitHanlder = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
-    const response = await fetch(
+    await fetch(
       "https://react-http-6ae90-default-rtdb.firebaseio.com/ThisIsUs/reservation_info.json",
       {
         method: "POST",
@@ -96,15 +98,32 @@ const RSVPForm = (props: any) => {
         />
         <br />
         <br />
-        <div>Will you be attending?</div>
-        <div className={styles.attendence}>
-          <input
-            onChange={onChangeHandler}
-            type="checkbox"
-            name="attending"
-            id="attending"
-          />
-          <div>Confirm</div>
+        <div className={styles.questions}>
+          <div className={styles['attendence-box']}>
+            <div>Will you be attending?</div>
+            <div className={styles.attendence}>
+              <input
+                onChange={onChangeHandler}
+                type="checkbox"
+                name="attending"
+                id="attending"
+              />
+              <div>Confirm</div>
+            </div>
+          </div>
+          <div className={styles['attendence-box']}>
+            <div>Vegan?</div>
+            <div className={styles.attendence}>
+              <input
+                onChange={onChangeHandler}
+                type="checkbox"
+                name="attending"
+                id="attending"
+              />
+            <div>Yes</div>
+            </div>
+
+          </div>
         </div>
         <br />
         <div>

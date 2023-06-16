@@ -50,8 +50,25 @@
   width: 99%;
 }
 
+.questions {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.attendence-box {
+  box-shadow: 1px 5px 10px black;
+  padding: 1%;
+}
+
 .attendence {
   display: flex;
+}
+
+input:hover, textarea:hover { 
+  box-shadow: 1px 1px 15px rgb(0, 0, 0);
 }
 
 .guess {
