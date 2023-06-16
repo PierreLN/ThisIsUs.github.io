@@ -23,6 +23,7 @@ const RSVPForm = (props: any) => {
     lastname: "",
     email: "",
     attending: false,
+    foodrestriction: false,
     guess: "",
     note: "",
     time: montrealTime,
@@ -117,8 +118,8 @@ const RSVPForm = (props: any) => {
               <input
                 onChange={onChangeHandler}
                 type="checkbox"
-                name="attending"
-                id="attending"
+                name="foodrestriction"
+                id="foodrestriction"
               />
             <div>Yes</div>
             </div>
